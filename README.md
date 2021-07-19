@@ -77,7 +77,7 @@
         <th>소스(코딩)</th>
         <th>
             <br>웹서버 개발, 
-            <br>Oracle Cloud 연동
+            <br>Oracle Cloud
             <br>화면설계, 전체
             <br>소스 취합 및 수정
         </th>
