@@ -49,12 +49,11 @@
 
 
  ### 📚 메인 화면
- ![메인 화면](https://user-images.githubusercontent.com/55887059/92356035-6b51ec80-f120-11ea-930f-4e4cca60e9eb.gif)
+![Screenshot 2021-07-19 at 12 03 35](https://user-images.githubusercontent.com/50795314/126107072-1bdae78d-c1cc-4ada-a854-63c15a86884e.jpg)
  ### 🖥️ 도서 검색 기능
- ![도서 검색 기능](https://user-images.githubusercontent.com/55887059/92356128-87558e00-f120-11ea-81c0-2698609784c2.gif)
+![도서 검색 결과](https://user-images.githubusercontent.com/50795314/126107027-daafef4d-9ae8-4af2-9fa9-7cae6d6b768f.gif)
  ### 📉 데이터 시각화
-![데이터 시각화](https://user-images.githubusercontent.com/55887059/92356183-a2c09900-f120-11ea-89f1-92d97a928bac.gif)
-
+![시각화 부분](https://user-images.githubusercontent.com/50795314/126106989-9f0f4474-2085-4270-bbfc-b50a4b4174f6.gif)
 
 ### 📑 Role & Member
 
@@ -69,17 +68,11 @@
     </tr>
     <tr>
         <th>프로젝트 기획</th>
-        <th>개요작성, 회의, 의견제안</th>
-        <th>개요작성, 회의, 의견제안</th>
-        <th>개요작성, 회의, 의견제안</th>
-        <th>개요작성, 회의, 의견제안</th>
+        <th colspan="4"> <center>개요작성, 회의, 의견제안 </center> </th>
     </tr>
     <tr>
         <th>요구분석</th>
-        <th>문서작성, 회의, 의견제안</th>
-        <th>문서작성, 회의, 의견제안</th>
-        <th>문서작성, 회의, 의견제안</th>
-        <th>문서작성, 회의, 의견제안</th>
+        <th colspan="4"> <center> 문서작성, 회의, 의견제안 </center> </th>
     </tr>
         <th>소스(코딩)</th>
         <th>
