@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <!-- w3 부트스트랩 적용 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- free template 부트 스트랩 적용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro Motion by TemplateMo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+    <!-- 버튼 정렬 기능 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type=text/javascript>
+            $(function() {
+              $('button#sort').bind('click', function() {
+                $.getJSON('/background_process_test',
+                    function(data) {
+                  //do nothing
+                });
+                return false;
+              });
+            });
+    </script>
+    <style>
+    	/*구글 웹 폰트 적용*/
+    	@import url(//fonts.googleapis.com/earlyaccess/jejumyeongjo.css);
+
+    	.jm-font{
+    		font-family: 'Jeju Myeongjo', serif;/*웹 폰트 지정*/
+    		/* color: orange; */
+      }
+      .search {
+        width: 10%;
+        border-radius: 1rem;
+    	}
+      .right-align {
+        float: right !important;
+      }
+          /* margin-top: 12px;
+          float: right; */
+    </style>
+  </head>
+
+  <body>
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='video/reading_book.mp4') }}" type="video/mp4">
+    </video>
+
+    <!-- <h2 class="search mb-4 ">도서 검색</h2>
+    <p class="mb-4 align-right">
+      <form action = "http://localhost:5000/search" method = "post" >
+            <input type="text" class="align-right search form-control input-lg" name = "nm">
+            <input type="submit" value="Search" class="align-right search btn btn-default" style="color:white;">
+
+            <div class="xcol-sm-offset-2 col-sm-10">
+            </div>
+      </form>
+    </p> -->
+    <div class="container" style="max-width: 1440px;">
+      <h2 style="font-size: 2em;" class="jm-font"> {{ name }} 검색 결과</h2>
+      <table class="table table-hover" style="background-color: rgba(247, 243, 252, 0.8)">
+        <tr>
+          <th style="white-space: nowrap;">
+            <!-- location.href='http://localhost:5000/search' -->
+            <!-- <button type="button" id="sort" onclick="sort()" name="but"> -->
+              ISBN13
+            <!-- </button> -->
+          </th>
+          <th style="white-space: nowrap;">도서명</th>
+          <th style="white-space: nowrap;">출판사</th>
+          <th style="white-space: nowrap;">출판일</th>
+          <th style="white-space: nowrap;">페이지</th>
+          <th style="white-space: nowrap;">가격</th>
+          <th style="white-space: nowrap;">브랜드</th>
+          <th style="white-space: nowrap;">서점명</th>
+          <th style="white-space: nowrap;">별점</th>
+          <th style="white-space: nowrap;">리뷰건수</th>
+          <th style="white-space: nowrap;">판매지수</th>
+        </tr>
+        {% for row in range(user_search|length) %}
+          <tr>
+            {% for i in range(11) %}
+              <td style="white-space: nowrap;">{{ user_search[row][i] }}</td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </table>
+
+
+  </body>
+</html>

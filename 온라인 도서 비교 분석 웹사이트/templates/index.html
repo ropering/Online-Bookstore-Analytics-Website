@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boogle</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slick.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/templatemo-style.css') }}">
+<!--
+TemplateMo 560 Astro Motion
+https://templatemo.com/tm-560-astro-motion
+-->
+</head>
+<body>
+    <video autoplay muted loop id="bg-video">
+        <source src="{{ url_for('static', filename='video/reading_book.mp4') }}" type="video/mp4">
+    </video>
+    <div class="page-container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="cd-slider-nav">
+              <nav class="navbar navbar-expand-lg" id="tm-nav">
+                <a class="navbar-brand" href="localhost:5000"><img src="{{ url_for('static', filename='img/boogle.png') }}" alt="Image"> </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-supported-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-supported-content">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                      <li class="nav-item selected">
+                        <a class="nav-link" aria-current="page" data-no="1">Intro</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"  data-no="3">BookSearch</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-no="2">Visualization</a>
+                        <div class="circle"></div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-no="4">Contact</a>
+                        <div class="circle"></div>
+                      </li>
+                    </ul>
+                  </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid tm-content-container">
+        <ul class="cd-hero-slider mb-0 py-5">
+          <li class="px-3" data-page-no="1">
+            <div class="page-width-1 page-left">
+              <div class="d-flex position-relative tm-border-top tm-border-bottom intro-container">
+                <div class="intro-left tm-bg-dark">
+                  <h2 class="mb-4" styel="text-align:center;">Welcome to Boogle BookSearch Website</h2>
+                  <p class="mb-4">
+                  'Boogle'의 명명의 시작은 책 정보를 검색할 수 있는 전 세계적인 검색 사이트라는 의미를 담고 있습니다.</p>
+                <p class="mb-0">
+
+                The beginning of Boogle's name implies that it is a worldwide search site that can search book information.
+                </div>
+                <div class="intro-right">
+                  <img src="{{ url_for('static', filename='img/home-img-1.jpg') }}" alt="Image" class="img-fluid intro-img-1">
+                  <img src="{{ url_for('static', filename='img/home-img-2.jpg') }}" alt="Image" class="img-fluid intro-img-2">
+                </div>
+                <div class="circle intro-circle-1"></div>
+                <div class="circle intro-circle-2"></div>
+                <div class="circle intro-circle-3"></div>
+                <div class="circle intro-circle-4"></div>
+              </div>
+              <div class="text-center">
+                <a href="#0" data-page-no="2" class="btn btn-primary tm-intro-btn tm-page-link">
+                  View Visualization
+                </a>
+              </div>
+            </div>
+          </li>
+          <li data-page-no="2">
+            <!-- Image Carousel -->
+            <div class="mx-auto position-relative gallery-container">
+
+              <div class="mx-auto tm-border-top gallery-slider">
+
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static', filename='img/1.png') }}" width="1000" height="200" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>1) 페이지-가격 혼합 그래프</p>
+                        </div>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FpWPRI%2Fbtq8H4AuV5s%2FKIoj01LrpQ9rttCW6WvbHK%2Fimg.png" data-title="1) 페이지-가격 혼합 그래프" data-lightbox="example-set" ><img src="{{ url_for('static', filename='img/1.png') }}" alt=""></a>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static', filename='img/2.png') }}"  width="1000" height="200" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>2) 페이지-가격 상관분석</p>
+                        </div>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdgViN8%2Fbtq8IDptfFS%2F04QIrbuksJo0drGzgPmh1k%2Fimg.png" data-title="2) 페이지-가격 상관분석" data-lightbox="example-set"><img src="{{ url_for('static', filename='img/2.png') }}" alt=""></a>                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static', filename='img/3.png') }}" width="1000" height="200" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>3) 리뷰건수-별점 상관분석</p>
+                        </div>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fehua2q%2Fbtq8ICYlAfE%2FHK2nmfM9igHP1osKFvmulK%2Fimg.png" data-title="3) 리뷰건수-별점 상관분석" data-lightbox="example-set" ><img src="{{ url_for('static', filename='img/3.png') }}" alt=""></a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static', filename='img/4.png') }}" width="1000" height="200" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>4) 브랜드별 판매지수 비율</p>
+                        </div>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FXf5ii%2Fbtq8HsPGky4%2F41Bq6JCKjzY19rQMnjUd5K%2Fimg.png" data-title="4) 브랜드별 판매지수 비율" data-lightbox="example-set" ><img src="{{ url_for('static', filename='img/4.png') }}" alt=""></a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-julia item">
+                    <img src="{{ url_for('static', filename='img/5.png') }}" width="500" height="200" alt="Image">
+                    <figcaption>
+                        <div>
+                            <p>5) 브랜드별 리뷰건수 비교</p>
+                        </div>
+                        <a href="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbtDQ95%2Fbtq8Hep3gUR%2FphzWoJKoB9o3HFBpUePwiK%2Fimg.png" data-title="5) 브랜드별 리뷰건수 비교" data-lightbox="example-set" ><img src="{{ url_for('static', filename='img/5.png') }}" alt=""></a>
+                    </figcaption>
+                </figure>
+
+              </div>
+            </div>
+          </li>
+          <li data-page-no="3" class="px-3">
+          <div class="position-relative page-width-1 page-right tm-border-top tm-border-bottom">
+            <div class="circle intro-circle-1"></div>
+            <div class="circle intro-circle-2"></div>
+            <div class="circle intro-circle-3"></div>
+            <div class="circle intro-circle-4"></div>
+            <div class="tm-bg-dark content-pad" >
+              <h2 class="mb-4">도서 검색</h2>
+              <p class="mb-4">
+                <form action = "http://localhost:5000/search" method = "post">
+                  <div class="form-group">
+                      <input type="text" class="form-control input-lg" name = "nm">
+                      <input type="submit" value="Search" class="btn btn-default" style="color:white;">
+
+                      <div class="col-sm-offset-2 col-sm-10">
+                      </div>
+                  </div>
+                </form>
+              </p>
+            </div>
+          </div>
+        </li>
+          <li data-page-no="4">
+            <div class="team" id="team">
+                <div class="container">
+                    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                        <p>My Team</p>
+                        <h2>Project Team Members</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ url_for('static', filename='img/임범수.jpg') }}" width="300" height="300" alt="Image">
+                                </div>
+                                <div class="team-text">
+
+                                  <div class="tm-bg-dark content-pad">
+                                    <h2 class="mb-4"> Lim Beom Su(임범수)</h2>
+                                    <h4 class="mb-4">Data Analyst</h4>
+                                    <h2 class="mb-4">Blog : <a href="https://lbsdatastat.tistory.com/" target="_blank"> lbsdatastat.tistory.com </a> </h2>
+                                    <h2 class="mb-4">GitHub :<a href="https://github.com/BeomSu-Lim" target="_blank"> github.com/BeomSu-Lim </a> </h2>
+                                  </div>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ url_for('static', filename='img/김은철.jpg') }}" width="300" height="300 "alt="Image">
+                                </div>
+                                <div class="team-text">
+                                    <div class="tm-bg-dark content-pad">
+                                      <h2 class="mb-4">Kim Eun Cheol (김은철)</h2>
+                                      <h4 class="mb-4">Data Analyst</h4>
+                                      <h2 class="mb-4">Blog : <a href="https://ad4613.tistory.com/" target="_blank"> ad4613.tistory.com </a> </h2>
+                                      <h2 class="mb-4">GitHub :<a href="https://github.com/ad4613" target="_blank"> github.com/ad4613 </a> </h2>
+                                    </div>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                  <img src="{{ url_for('static', filename='img/임승규.jpg') }}" width="300" height="300" alt="Image">
+                                </div>
+                                <div class="team-text">
+                                  <div class="tm-bg-dark content-pad">
+
+                                    <h2 class="mb-4">Lim Seoung Gyu (임승규)</h2>
+                                    <h4 class="mb-4">Backend Developers</h4>
+                                    <h2 class="mb-4">Blog : <a href="https://codinglab8080.tistory.com/" target="_blank"> codinglab8080.tistory.com </a> </h2>
+                                    <h2 class="mb-4">GitHub :<a href="https://github.com/sir8080" target="_blank"> github.com/sir8080 </a> </h2>
+                                  </div>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="{{ url_for('static', filename='img/오명균.jpg') }}" width="300" height="300" alt="Image">
+                                </div>
+                                <div class="team-text">
+                                  <div class="tm-bg-dark content-pad">
+                                    <h2 class="mb-4">O Myeong Gyun (오명균)</h2>
+                                    <h4 class="mb-4">Backend Developers</h4>
+                                    <h2 class="mb-4">Blog : <a href="https://ropering.tistory.com/" target="_blank"> ropering.tistory.com </a> </h2>
+                                    <h2 class="mb-4">GitHub :<a href="https://github.com/ropering" target="_blank"> github.com/ropering </a> </h2>
+                                  </div>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+    </div>
+    <div class="container-fluid">
+      <footer class="row mx-auto tm-footer">
+        <div class="col-md-6 px-0">
+          2021 혁신성장 청년인재 집중양성 사업
+        </div>
+        <div class="col-md-6 px-0 tm-footer-right">
+           인공지능 개발자 양성과정
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- Preloader, https://ihatetomatoes.net/create-custom-preloading-screen/ -->
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  <script src={{ url_for('static', filename='js/jquery-3.5.1.min.js') }}></script>
+  <script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+  <script src={{ url_for('static', filename='js/slick.js') }}></script>
+  <script src={{ url_for('static', filename='js/templatemo-script.js') }}></script>
+  <!-- <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/templatemo-script.js"></script> -->
+</body>
+</html>

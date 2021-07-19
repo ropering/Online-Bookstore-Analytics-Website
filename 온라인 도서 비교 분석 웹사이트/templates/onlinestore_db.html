@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+  </head>
+
+  <body>
+    <h3>ONLINESTORE 테이블 조회 페이지입니다</h3>
+    <table border="3">
+      <th>
+        <tr>
+          <td>번호</td>
+          <td>ISBN13</td>
+          <td>서점 명</td>
+          <td>별점</td>
+          <td>회원리뷰 수</td>
+          <td>판매지수</td>
+        </tr>
+      </th>
+      {% for row in range(onlinestore_db|length) %}
+      <tr>
+        {% for i in range(6) %}
+          <td>{{ onlinestore_db[row][i] }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>
