@@ -48,8 +48,10 @@
 ### 📼 Appearance
 온라인 서점(yes24, 알라딘, 교보문고) 도서 통합 검색 및 데이터 분석 웹사이트
 
+### DB 설계
+![image](https://user-images.githubusercontent.com/50795314/127442816-927b0320-335d-4296-aab2-f4025f01a29e.png)
 
- ### 📚 메인 화면
+### 📚 메인 화면
 ![Screenshot 2021-07-19 at 12 03 35](https://user-images.githubusercontent.com/50795314/126107072-1bdae78d-c1cc-4ada-a854-63c15a86884e.jpg)
  ### 🖥️ 도서 검색 기능
 ![도서 검색 결과](https://user-images.githubusercontent.com/50795314/126107027-daafef4d-9ae8-4af2-9fa9-7cae6d6b768f.gif)
