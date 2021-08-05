@@ -1,3 +1,4 @@
+
 # 온라인 도서 비교 분석 웹사이트
 
 
@@ -47,8 +48,10 @@
 ### 📼 Appearance
 온라인 서점(yes24, 알라딘, 교보문고) 도서 통합 검색 및 데이터 분석 웹사이트
 
+### DB 설계
+![image](https://user-images.githubusercontent.com/50795314/127442816-927b0320-335d-4296-aab2-f4025f01a29e.png)
 
- ### 📚 메인 화면
+### 📚 메인 화면
 ![Screenshot 2021-07-19 at 12 03 35](https://user-images.githubusercontent.com/50795314/126107072-1bdae78d-c1cc-4ada-a854-63c15a86884e.jpg)
  ### 🖥️ 도서 검색 기능
 ![도서 검색 결과](https://user-images.githubusercontent.com/50795314/126107027-daafef4d-9ae8-4af2-9fa9-7cae6d6b768f.gif)
@@ -77,7 +80,7 @@
         <th>소스(코딩)</th>
         <th>
             <br>웹서버 개발, 
-            <br>Oracle Cloud 연동
+            <br>Oracle Cloud
             <br>화면설계, 전체
             <br>소스 취합 및 수정
         </th>
@@ -102,5 +105,10 @@
     </tr>
 </table>
 
+### 🎞 시연 영상 
+[![시연영상](http://img.youtube.com/vi/pn0flU-whmA/0.jpg)](https://youtu.be/pn0flU-whmA?t=0s) 
+<br> https://www.youtube.com/watch?v=pn0flU-whmA
 
-
+### 📽 어플리케이션 실행영상
+[![시연영상](http://img.youtube.com/vi/l1f9604FPs8/0.jpg)](https://youtu.be/l1f9604FPs8?t=0s) 
+<br> https://www.youtube.com/watch?v=l1f9604FPs8
